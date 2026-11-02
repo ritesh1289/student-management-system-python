@@ -1,107 +1,38 @@
-# 📚 Student Management System (Python)
-
-A simple **Student Management System** built using **Python** that allows users to manage student records through a **command-line interface (CLI)**.
-The application stores student information in a **JSON file** and supports full **CRUD operations** (Create, Read, Update, Delete).
-
-This project is a great beginner-friendly example for learning **Python file handling, JSON storage, and basic data management**.
-
----
-
-## 🚀 Features
-
-✔ Add new student records
-✔ View all students in a formatted table
-✔ Search students by ID
-✔ Update existing student details
-✔ Delete student records
-✔ Automatic unique student ID generation
-✔ Data persistence using JSON file
-✔ Simple command-line interface
-
----
-
-## 🛠 Technologies Used
-
-* Python
-* JSON (for data storage)
-* File Handling
-* Command Line Interface (CLI)
-
----
-
-## 📂 Project Structure
-
-```
-student-management-system-python
-│
-├── student_management.py
-├── students.json
+Advanced Student Management System
+Overview
+A Python and Streamlit web application for managing student profiles, marks, attendance, and reports.
+Features
+- Dashboard metrics and interactive charts for classes and academic performance.
+- Add, view, edit, and delete student records.
+- Search by ID, name, class, or email.
+- Filter by class, grade, and age; sort student records.
+- Record Maths, Python, and English marks.
+- Calculate total marks, percentage, grade, and pass/fail result.
+- Mark attendance as Present or Absent by date.
+- Prevent duplicate records and calculate attendance history and percentages.
+- View attendance history and attendance percentages.
+Technologies
+- Python – programming language
+- Streamlit – web application interface
+- Pandas – data processing
+- Plotly Express – interactive charts
+- JSON – local data storage
+- OpenPyXL – Excel report generation
+Student-Management-System/
+├── Student-Management-system.py
+├── requirements.txt
 ├── README.md
-└── .gitignore
-```
-
----
-
-## ⚙️ How the System Works
-
-1. The program loads student data from a **JSON file**.
-2. Users interact with a **menu-driven interface**.
-3. Students can be **added, searched, updated, or deleted**.
-4. All changes are saved automatically in the **students.json** file.
-
----
-
-## ▶️ How to Run the Project
-
-1. Clone this repository
-
-```
-git clone https://github.com/yourusername/student-management-system-python.git
-```
-
-2. Go to the project directory
-
-```
-cd student-management-system-python
-```
-
-3. Run the Python program
-
-```
-python student_management.py
-```
-
----
-
-## 📋 Menu Options
-
-```
-1. Add Student
-2. View All Students
-3. Search Student
-4. Update Student
-5. Delete Student
-6. Exit
-```
-
----
-
-## 🎯 Learning Objectives
-
-This project helps beginners understand:
-
-* Python functions
-* JSON file handling
-* CRUD operations
-* Menu-driven programs
-* Data persistence
-
----
-
-## 👨‍💻 Author
-
-    **Ritesh Patwa**
-
----
-
-⭐ If you found this project helpful, consider **starring the repository**.
+└── data/
+    ├── students.json
+    └── attendance.json
+Installation and Execution
+1. Install Python and open the project folder in VS Code.
+2. Create an environment: py -m venv .venv.
+3. Activate it: .venv\Scripts\activate.
+4. Install packages: python -m pip install -r requirements.txt.
+5. Run: python -m streamlit run Student-Management-system.py.
+6. Open http://localhost:8501 in your browser.
+Requirements and Note
+The app creates JSON data files automatically; use persistent storage for production.
+The app creates its data folder and JSON files automatically; keep them with the project.
+This project is for educational use. Use a persistent database for production deployment.
